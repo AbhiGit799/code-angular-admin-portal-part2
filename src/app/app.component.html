@@ -1,0 +1,198 @@
+<div style="text-align: center">
+
+    <br>
+
+    <h1>Part-2 Admin Portal Shopping Site </h1>
+
+    <button class="btn btn-success">Save</button>
+
+    <!-- btn btn-success is modified in @import 'assets/app.scss'; -->
+
+    <br> <br> 
+
+    <h2>Font Awesome Icons</h2>
+
+    <i class="fa fa-address-book fa-5x" aria-hidden="true" ></i>
+
+    <br><br>
+
+    <i class="fa fa-table fa-5x" aria-hidden="true"></i>
+
+    <br><br>
+
+   <i class="fa fa-refresh fa-5x" aria-hidden="true"></i>
+
+   <br><br>
+
+   <div class="list-group list-group-5">
+       <a class="list-group-item" href="#"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp; Home</a>
+       <a class="list-group-item" href="#"><i class="fa fa-book fa-fw" aria-hidden="true"></i>&nbsp; Library</a>
+       <a class="list-group-item" href="#"><i class="fa fa-pencil fa-fw" aria-hidden="true"></i>&nbsp; Applications</a>
+       <a class="list-group-item" href="#"><i class="fa fa-cog fa-fw" aria-hidden="true"></i>&nbsp; Settings</a>
+   </div>
+
+
+   <br/> <br/> 
+  
+  <hr>
+
+  <br/> 
+
+   <h2> Ng Bootstrap example</h2>
+
+   <p><ngb-progressbar type="success" [value]="25"></ngb-progressbar></p>
+   <p><ngb-progressbar type="info" [value]="50"></ngb-progressbar></p>
+   <p><ngb-progressbar type="warning" [value]="75"></ngb-progressbar></p>
+   <p><ngb-progressbar type="danger" [value]="100"></ngb-progressbar></p>
+   <p><ngb-progressbar type="primary" [value]="75"></ngb-progressbar></p>
+   <p><ngb-progressbar type="secondary" [value]="50"></ngb-progressbar></p>
+   <p><ngb-progressbar type="dark" [value]="25"></ngb-progressbar></p>
+
+  <br>
+
+  <ul ngbNav #nav="ngbNav" class="nav-tabs">
+    <li ngbNavItem>
+      <a ngbNavLink>First</a>
+      <ng-template ngbNavContent>First content</ng-template>
+    </li>
+    <li ngbNavItem>
+      <a ngbNavLink>Second</a>
+      <ng-template ngbNavContent>Second content</ng-template>
+    </li>
+    <li ngbNavItem>
+        <a ngbNavLink>Third</a>
+        <ng-template ngbNavContent>Third content</ng-template>
+      </li>
+  </ul>
+  <div [ngbNavOutlet]="nav"></div>
+   
+
+  
+
+  <br/> <br/> 
+  
+  <hr>
+
+  <br/> 
+  
+  <h2> Feather Icons </h2> <br/>
+
+  <table style=" margin-left: auto; margin-right: auto; border-collapse: separate; border-spacing: 50px 0; ">
+
+    <tr>
+
+      <td> <i data-feather="circle"></i>  </td>
+
+      <td>  <i data-feather="github"></i>   </td>
+
+      <td> <i data-feather="align-center"></i>   </td>
+
+      <td> <i data-feather="bell"></i>   </td>
+
+      <td> <i data-feather="bluetooth"></i>   </td>
+
+      <td> <i data-feather="users"></i>   </td>
+
+      <td> <i data-feather="trash-2"></i>   </td>
+
+      <td> <i data-feather="share"></i>   </td>
+
+      <td> <i data-feather="shopping-bag"></i>   </td>
+
+    </tr>
+
+    <tr>
+      
+      <td> <i data-feather="box"></i>  </td>
+
+      <td>  <i data-feather="printer"></i>   </td>
+
+      <td> <i data-feather="refresh-ccw"></i>   </td>
+
+      <td> <i data-feather="settings"></i>   </td>
+
+      <td> <i data-feather="smile"></i>   </td>
+
+      <td> <i data-feather="wifi"></i>   </td>
+
+      <td> <i data-feather="shopping-cart"></i>   </td>
+
+      <td> <i data-feather="share-2"></i>   </td>
+
+      <td> <i data-feather="link"></i>   </td>
+
+    </tr>
+
+
+  </table>
+
+
+  <br> <br> 
+
+  <hr>
+
+  <br>
+
+  <app-feather-icon></app-feather-icon>
+
+  <br> <br> 
+
+  <hr>
+
+  <br>
+
+  <app-custom-feather icon="phone-call"></app-custom-feather> <br/>
+
+  <app-custom-feather icon="server"></app-custom-feather> <br/>
+
+  <app-custom-feather icon="power"></app-custom-feather> 
+
+  <br> <br> 
+
+  <hr>
+
+  <br>
+
+  <h2>Ngx-toastr</h2>
+
+  <br>
+
+  <button (click)="showSuccess()" class="btn btn-success">Show Toastr Success</button> &nbsp;
+
+  <button (click)="showWarning()" class="btn btn-warning">Show Toastr Warning</button>  &nbsp;
+
+  <button (click)="showInfo()" class="btn btn-info">Show Toastr Info</button>&nbsp;
+
+  <button (click)="showError()" class="btn btn-danger">Show Toastr Error</button>&nbsp;
+
+  <br> <br> 
+
+  <hr>
+
+  <br>
+
+  <h2>Sweetalert</h2>
+
+  <br>
+
+  <button (click)="showsweet()" class="btn btn-danger">Sweetalert </button> &nbsp;
+  <button (click)="showsweet2()" class="btn btn-danger">Sweetalert 2 </button> &nbsp;
+  <button (click)="showsweet3()" class="btn btn-danger">Sweetalert 3</button> &nbsp;
+  <button (click)="showsweet4()" class="btn btn-danger">Sweetalert 4</button> &nbsp;
+
+
+  <br/>  <br/> <br/> 
+
+
+ <router-outlet></router-outlet>
+
+</div>
+
+
+
+
+
+
+
+
+
